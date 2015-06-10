@@ -25,6 +25,7 @@ public class ClientSocketFX extends Application {
         
         stage.setScene(scene);
         stage.show();
+        
     }
 
     /**

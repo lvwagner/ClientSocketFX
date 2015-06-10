@@ -31,16 +31,22 @@ import javafx.scene.control.TextField;
 public class FXMLDocumentController implements Initializable {
 
     @FXML
+    private Button btnConectar;
+
+    @FXML
     private Button btnEnviar;
+
+    @FXML
+    private Label lblCliente;
 
     @FXML
     private TextField tf_message;
 
     @FXML
     private TextArea txArea;
-    
+
     @FXML
-    private Label lblCliente;
+    private TextField tf_nick;
 
     Socket socket;
     InputStream inStream;
@@ -55,6 +61,11 @@ public class FXMLDocumentController implements Initializable {
         printStream.println(tf_message.getText());
         printStream.flush();
         tf_message.setText("");
+    }
+
+    @FXML
+    void logarNoChat(ActionEvent event) {
+
     }
 
     @Override
